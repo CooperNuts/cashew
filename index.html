@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pistachio Price Insights</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <meta name="description" content="Indicative pistachio price signals and market trends for California and Spain markets.">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1"></script>
+
+  <link rel="icon" href="/PISTACHIODRAWING.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-top">
+    <div>
+      <h1>Pistachio Price Insights</h1>
+      <h2 class="subtitle">From data to decisions</h2>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="content">
+
+    <div class="card">
+
+      <h2 id="productTitle"></h2>
+      <div class="price" id="productPrice"></div>
+      <div class="change" id="productChange"></div>
+
+      <div class="chart-wrapper">
+
+        <div class="floating-tickers">
+
+          <div class="ticker active" data-column="usdlb_std" data-name="Std. Size USX1 USDLB FAS Calif.">
+            <span class="label"></span>
+          </div>
+
+          <div class="ticker" data-column="usdlb_large" data-name="Large Size USX1 USDLB FAS Calif.">
+            <span class="label"></span>
+          </div>
+
+          <div class="ticker" data-column="usdlb_kernel" data-name="Kernel W80 USX1 USDLB FAS Calif.">
+            <span class="label"></span>
+          </div>
+
+          <div class="ticker" data-column="eurkg_es2125" data-name="ES 21/25 EURKG EXW Toledo">
+            <span class="label"></span>
+          </div>
+
+          <div class="ticker" data-column="eurkg_eskernel" data-name="ES Kernel EURKG EXW Toledo">
+            <span class="label"></span>
+          </div>
+
+        </div>
+
+        <canvas id="currencyChart"></canvas>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- =========================
+       TARJETAS EN MISMA FILA
+  ========================== -->
+  <section class="dashboard-cards">
+
+    <!-- CARD 1 -->
+    <div class="report-card">
+
+      <div class="report-label">STANDARDS</div>
+
+      <div class="report-title">
+        APG US Standards for Grades of Pistachio Nuts
+      </div>
+
+      <div class="report-desc">
+        Official quality grading standards for pistachio nuts published by the American Pistachio Growers.
+      </div>
+
+      <a class="report-button"
+         href="/APG-US-Standards-for-Grades-of-Pistachio-Nuts_Brochure_AUG-26-15.zip_.pdf"
+         target="_blank">
+         View
+      </a>
+
+    </div>
+
+    <!-- CARD 2 (EXPORT) -->
+    <div class="report-card export-card">
+
+      <div class="report-label">Export</div>
+
+      <div class="report-title">
+        Administrative Committee for Pistachios - PEAR
+      </div>
+
+      <div class="report-desc">
+        Pistachio Export Aflatoxin Reporting (PEAR) Program for exports to the European Union. Program Manual 2025
+      </div>
+
+      <a class="report-button"
+         href="PEAR-Program-Manual-2025-2026.pdf"
+         target="_blank">
+         View
+      </a>
+
+    </div>
+
+  </section>
+
+  </main>
+
+  <footer class="footer">
+  <p>© 2025 · E. Lagarda</p>
+  
+  <p class="disclaimer"> The prices displayed on this website are provided solely as indicative price signals reflecting general market conditions and are intended for statistical and informational purposes only. Under no circumstances shall they be construed as firm, binding, or contractual offers. The indicated prices are derived from information gathered from various publicly available and industry-relevant sources. While reasonable efforts are made to ensure accuracy, no representation or warranty is given as to the completeness, reliability, or timeliness of such information. These prices do not take into account specific conditions related to product availability, logistics, contractual volumes, quality specifications, or individual payment terms, all of which may have a material impact on actual commercial offers. I love pistachios, not sure about the vice-versa.
+  </p>
+  </footer>
+  
+  <script src="app.js" defer></script>
+
+  </body>
+  </html>
